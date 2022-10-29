@@ -1,0 +1,219 @@
+
+/*
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+*/
+
+.material-symbols-outlined{
+    z-index: 5;
+    position: absolute;
+    background-color:transparent;
+    width: 100%;
+    bottom: 3vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #171a20;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    margin: 18px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.desktop{
+    display: none;
+}
+
+a.logo{
+    height: 15px;
+    width: 110px;
+    color: inherit;
+}
+
+header a{
+    color: inherit;
+    font-size: small;
+    font-weight: 500;
+    column-gap: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+     
+}
+
+header nav.center{
+    text-align: center;
+}
+
+header nav.center:hover{
+
+}
+
+header nav.right{
+     text-align: right;
+     margin-right: 30px;
+}
+
+.models{
+    background-image: url(images/model-s.jpg);
+}
+
+.model3{
+    background-image: url(images/model-3.jpg);
+}
+
+.modelx{
+    background-image: url(images/model-x.jpg);
+}
+
+.modely{
+    background-image: url(images/model-y.jpg);
+}
+
+.roof{
+    background-image: url(images/roof.jpg);
+}
+
+.panels{
+    background-image: url(images/solarpanels.jpg);
+}
+
+.zalguur{
+    background-image: url(images/accessories.jpg);
+}
+
+section{
+    height: 100vh; /*section burt buten delgej haruulahing*/
+    
+    background-size: cover;
+    background-position: center center;
+
+}
+
+section .content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+    padding-bottom: 11vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows:min-content auto min-content;
+}
+
+section h1{
+    font-size: 2.5rem;
+    color: inherit;
+}
+
+section p{
+    font-size: small;
+}
+
+section a{
+    color: inherit;
+}
+
+section .button{
+    display: grid;
+    row-gap: 23px;
+    padding: 0 50px;
+}
+
+section .button a{
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: medium;
+}
+
+section .button a:first-child{
+    background-color: #171a20cc;
+    color: #ffffff;
+}
+
+aside{
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    background-color: #fff;
+    padding: 60px 37px;
+    z-index: 4;
+    height: 100vh;
+    font-size: small;
+}
+
+aside a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 7px 0;
+
+}
+
+aside button.x{
+    font-size: 24px;
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}
+
+.blur{
+    display: none;
+    inset: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+.menuBtn:hover + aside{
+    right: 0;
+}
+
+.menuBtn:hover + .blur{
+    display: initial;
+}
+
+@media (min-width: 768px){
+    section .button{
+        margin: 0 auto;
+        display: center;
+        max-width: 640px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .desktop{
+        display: initial;
+    
+    }
+
+}
