@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: sitemap.xml
+Allow: sitemap.html
+
+Sitemap: https://nujra122.github.io/huurhuntesla/sitemap.xml
+
+Disallow:
+
+https://www.-----.com/
