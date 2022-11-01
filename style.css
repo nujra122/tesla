@@ -28,6 +28,10 @@ body{
     font-family: 'M PLUS 1', sans-serif;
 }
 
+header nav h1{
+    
+}
+
 header{
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -164,7 +168,15 @@ aside{
     padding: 60px 37px;
     z-index: 4;
     height: 100vh;
-    font-size: small;
+    font-size: 10px;
+}
+
+aside h2{
+    
+}
+
+.newAside {
+    right: 0px;
 }
 
 aside a{
@@ -175,7 +187,7 @@ aside a{
 
 }
 
-aside button.x{
+#xclose{
     font-size: 24px;
     border: none;
     background-color: #fff;
